@@ -60,7 +60,7 @@ Copy code
 | **Vector DB** | MariaDB 11.4+ with Vector Columns |
 | **Embeddings** | OpenAI CLIP (`ViT-B/32` model via `sentence-transformers`) |
 | **ETL / Pipeline** | Pandas, NumPy, Pillow, Requests, tqdm |
-| **Infra** | Docker-ready; works locally or cloud-hosted MariaDB |
+| **Infra** | Live link streamlit; works locally or cloud-hosted MariaDB |
 
 ---
 
@@ -162,6 +162,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
