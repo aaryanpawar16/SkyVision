@@ -1,6 +1,10 @@
 fastapi
-uvicorn[standard]
+uvicorn
 gunicorn
-python-multipart
-pydantic
 mariadb
+pandas
+numpy
+tqdm
+httpx           # 👈 ADD THIS
+requests
+python-multipart
