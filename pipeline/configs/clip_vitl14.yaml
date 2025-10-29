@@ -1,0 +1,4 @@
+# Example config if you switch to a larger CLIP model
+model_name: clip-ViT-L-14
+dim: 768
+with_images: true

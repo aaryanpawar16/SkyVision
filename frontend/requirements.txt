@@ -1,0 +1,5 @@
+streamlit==1.39.0
+requests==2.32.3
+Pillow==10.4.0
+numpy==1.26.4
+python-dotenv==1.0.1

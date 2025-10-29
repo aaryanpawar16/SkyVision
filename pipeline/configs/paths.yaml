@@ -1,0 +1,2 @@
+processed_dir: data/processed
+urls_csv: data/external/image_urls.csv
