@@ -1,0 +1,9 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+mariadb==1.1.10          # works with Python 3.12; avoid 3.13 for now
+numpy==1.26.4
+pandas==2.2.2
+requests==2.32.3
+python-multipart==0.0.9  # for file uploads
+Pillow==10.4.0
+streamlit==1.39.0        # your frontend
