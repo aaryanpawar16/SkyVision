@@ -6,8 +6,7 @@ SkyVision lets you search **visually similar airports and airline logos** using 
 Type “beautiful Asian airports with glass facades” — and get airports that *look* like what you imagined.  
 Or upload a logo to find visually related airlines.
 
-
-<img width="500" height="500" alt="diagram" src="https://github.com/user-attachments/assets/af3ea211-e825-4f16-abd0-c00284b64349" />
+<img width="3840" height="2642" alt="Skyvision Architecture" src="https://github.com/user-attachments/assets/5b7b7eb9-393d-4d20-a084-4e56a561b930" />
 
 ---
 
@@ -163,6 +162,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
