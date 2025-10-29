@@ -1,7 +1,6 @@
-# Ensure CPU wheels for PyTorch/TorchVision
+# requirements.txt (minimal ML stack that works on Python 3.13)
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# Web
 fastapi==0.115.6
 uvicorn==0.30.6
 gunicorn==22.0.0
@@ -9,16 +8,13 @@ httpx==0.27.2
 requests==2.32.3
 python-multipart==0.0.9
 
-# DB + data
 mariadb==1.1.10
 pandas==2.2.3
-numpy==1.26.4            # safe manylinux wheel widely compatible
+numpy==2.1.3                 # ✅ wheel for Python 3.13
 tqdm==4.66.5
-pydantic==2.9.2          # ok for FastAPI 0.115.x
+pydantic==2.9.2
 
-# ML / embeddings (works on Python 3.13 w/ CPU)
-torch==2.9.0+cpu
-torchvision==0.20.0+cpu  # optional but good to have for image ops
+torch==2.9.0+cpu             # ✅ available for cp313
 transformers==4.45.2
 sentence-transformers==3.2.1
 Pillow==10.4.0
