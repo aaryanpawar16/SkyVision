@@ -64,7 +64,7 @@ Copy code
 
 ---
 
-## 🧩 Setup Instructions
+## 🧩 Setup Instructions (preferred Python 3.12 version)
 
 ### 1️⃣ Clone the repository
 ```bash
@@ -205,6 +205,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
