@@ -92,7 +92,7 @@ cd..
 cd frontend
 pip install -r requirements.txt
 4️⃣ Prepare Maria DB
-Download Maria DB from https://mariadb.org/download
+Download Maria DB 12.0.2 Rolling from https://mariadb.org/download
 After installation,
 Log into mysql/mariadb client and run:
 CREATE DATABASE IF NOT EXISTS skyvision;
@@ -214,6 +214,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
