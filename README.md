@@ -75,10 +75,16 @@ Additional Instructions:
 Please download the data folder from the drive link: https://drive.google.com/drive/folders/1m1smLOCzSemC0UtDNy5BAZt-5mPC8AGy?usp=sharing
 Place data folder at root of the SkyVision.
 2️⃣ Create a Python environment
-
+cd frontend
 python -m venv .venv
 source .venv/bin/activate     # on macOS/Linux
 .venv\Scripts\activate        # on Windows
+cd..
+cd backend
+python -m venv .venv
+source .venv/bin/activate     # on macOS/Linux
+.venv\Scripts\activate        # on Windows
+
 3️⃣ Install dependencies
 cd backend
 pip install -r requirements.txt
@@ -209,6 +215,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
