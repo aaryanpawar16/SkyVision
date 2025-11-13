@@ -133,8 +133,6 @@ CREATE TABLE IF NOT EXISTS airlines (
 5️⃣ Configure environment
 Create a .env file in the project root:
 
-env
-
 # Database
 DATABASE_HOST=localhost
 DATABASE_PORT=3306
@@ -142,12 +140,13 @@ DATABASE_USER=sky
 DATABASE_PASSWORD=vision
 DATABASE_NAME=skyvision
 
+# API
+API_URL=http://api:8000
+CORS_ALLOW_ORIGINS=*
+
 # Embeddings
 EMBEDDING_MODEL=clip-ViT-B-32
 EMBEDDING_DIM=512
-
-# API
-CORS_ALLOW_ORIGINS=*
 6️⃣ Prepare Data (From Project Folder Root)
 Run the data pipeline:
 
@@ -215,6 +214,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
