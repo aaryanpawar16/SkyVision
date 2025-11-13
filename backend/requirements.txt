@@ -19,4 +19,6 @@ torch==2.9.0+cpu             # ✅ available for cp313
 transformers==4.45.2
 sentence-transformers==3.2.1
 Pillow==10.4.0
+pyarrow
+fastparquet
 
