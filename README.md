@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS airlines (
   embedding VECTOR(512) NULL
 );
 
-4️⃣ Configure environment
+5️⃣ Configure environment
 Create a .env file in the project root:
 
 env
@@ -138,14 +138,14 @@ EMBEDDING_DIM=512
 
 # API
 CORS_ALLOW_ORIGINS=*
-5️⃣ Prepare Data (From Project Folder Root)
+6️⃣ Prepare Data (From Project Folder Root)
 Run the data pipeline:
 
 python scripts/auto_add_image_urls.py
 python scripts/localize_images.py --overwrite
 python scripts/embed_logos.py
 python -m pipeline.load_to_mariadb --processed_dir data/processed --prefer_image
-6️⃣
+7️⃣
 ️ Run Backend
 
 cd backend
@@ -205,6 +205,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
