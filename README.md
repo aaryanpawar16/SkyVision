@@ -81,6 +81,45 @@ pip install -r requirements.txt
 cd..
 cd frontend
 pip install -r requirements.txt
+4️⃣ Prepare Maria DB
+Download Maria DB from https://mariadb.org/download
+After installation,
+Log into mysql/mariadb client and run:
+CREATE DATABASE IF NOT EXISTS skyvision;
+CREATE USER IF NOT EXISTS 'sky'@'%' IDENTIFIED BY 'vision';
+GRANT ALL PRIVILEGES ON skyvision.* TO 'sky'@'%';
+FLUSH PRIVILEGES;
+USE skyvision;
+
+-- create tables
+CREATE TABLE IF NOT EXISTS airports (
+  id INT PRIMARY KEY,
+  name VARCHAR(255),
+  city VARCHAR(255),
+  country VARCHAR(255),
+  iata VARCHAR(8),
+  icao VARCHAR(8),
+  latitude DOUBLE,
+  longitude DOUBLE,
+  image_url VARCHAR(1024),
+  metadata JSON NULL,
+  embedding VECTOR(512) NULL
+);
+
+CREATE TABLE IF NOT EXISTS airlines (
+  id INT PRIMARY KEY,
+  name VARCHAR(255),
+  alias VARCHAR(255),
+  iata VARCHAR(8),
+  icao VARCHAR(8),
+  callsign VARCHAR(255),
+  country VARCHAR(255),
+  active VARCHAR(8),
+  logo_url VARCHAR(1024),
+  metadata JSON NULL,
+  embedding VECTOR(512) NULL
+);
+
 4️⃣ Configure environment
 Create a .env file in the project root:
 
@@ -104,14 +143,15 @@ Run the data pipeline:
 
 python scripts/auto_add_image_urls.py
 python scripts/localize_images.py --overwrite
-python scripts/embed_images.py
 python scripts/embed_logos.py
 python -m pipeline.load_to_mariadb --processed_dir data/processed --prefer_image
-6️⃣ Run Backend
+6️⃣
+️ Run Backend
 
 cd backend
 uvicorn app.main:app --reload --port 8000
-7️⃣ Run Frontend
+
+8️⃣ Run Frontend
 
 cd frontend
 streamlit run app.py
@@ -148,7 +188,7 @@ Detailed metadata schema for style, tags, and attribution
 
 📸 Demo Video (4 minutes)
 🎬 Watch the Demo →
-(Replace this with your final YouTube or Drive link)
+[(SkyVision Demo)](https://www.youtube.com/watch?v=R4qiBVkcuRE)
 
 ⚖️ License
 MIT License © 2025 — SkyVision Project
@@ -165,6 +205,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
