@@ -45,7 +45,7 @@ Copy code
 **Data Flow:**
 1. `auto_add_image_urls.py` — fetches airport & airline image/logo mappings  
 2. `localize_images.py` — downloads and caches media locally  
-3. `embed_images.py` /  `embed_logos.py` — generate `.npy` embedding arrays  
+3. `embed_logos.py` — generate `.npy` embedding arrays  
 4. `pipeline/load_to_mariadb.py` — loads all metadata + vectors into MariaDB tables  
 5. `/search/text`, `/search/image`, `/search/hybrid` APIs serve query results
 
@@ -209,6 +209,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
