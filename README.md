@@ -76,7 +76,10 @@ python -m venv .venv
 source .venv/bin/activate     # on macOS/Linux
 .venv\Scripts\activate        # on Windows
 3️⃣ Install dependencies
+cd backend
+pip install -r requirements.txt
 
+cd frontend
 pip install -r requirements.txt
 4️⃣ Configure environment
 Create a .env file in the project root:
@@ -96,7 +99,7 @@ EMBEDDING_DIM=512
 
 # API
 CORS_ALLOW_ORIGINS=*
-5️⃣ Prepare Data
+5️⃣ Prepare Data (From Project Folder Root)
 Run the data pipeline:
 
 python scripts/auto_add_image_urls.py
@@ -162,6 +165,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
