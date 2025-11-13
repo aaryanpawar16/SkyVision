@@ -78,7 +78,7 @@ source .venv/bin/activate     # on macOS/Linux
 3️⃣ Install dependencies
 cd backend
 pip install -r requirements.txt
-
+cd..
 cd frontend
 pip install -r requirements.txt
 4️⃣ Configure environment
@@ -165,6 +165,7 @@ Sentence Transformers for Python embedding interface
 
 
 SkyVision — “Search what you imagine, not just what you type.” ✈️
+
 
 
 
